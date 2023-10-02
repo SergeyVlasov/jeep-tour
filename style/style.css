@@ -1,0 +1,147 @@
+header {
+    background: url(../media/Head.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+    height: 600px
+}
+
+.header-title{
+    margin-top: 150px;
+}
+
+.main-nav {}
+
+.nav-itm {}
+
+
+.booking-data-select {
+    margin-bottom: -50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+.text-style-monserrat {
+    font-family: Montserrat;
+}
+
+
+.popular-direction-area {
+    margin-top: 0px;
+    width: 100%;
+}
+
+
+.card-popular-direction {
+    max-width: 400px;
+}
+
+.card-description-left {
+    flex-direction: column;
+}
+
+.prefer-trip-card {
+    max-width: 295px;
+    height: 68px;
+    flex-direction: column;
+}
+
+.button-open-calender-booking {
+    border-right: 1px solid black;
+}
+
+
+@media screen and (max-width: 100px) {
+    header {
+        background: black;
+    }
+}
+
+
+.bottom-button{
+    bottom:0%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    z-index: 999;
+}
+
+.whatsapp-button {
+    right: 0%;
+}
+
+.telegram-button {
+    left: 50px;
+}
+
+.bottom-button:before,
+.bottom-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.whatsapp-button:before,
+.whatsapp-button:after {
+    border: 1px solid #25D366;
+}
+
+.telegram-button:before,
+.telegram-button:after {
+    border: 1px solid blue;
+}
+
+.whatsapp-button:after,
+.telegram-button:after {
+    animation-delay: .5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        height: 500px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        height: 300px
+    }
+    .header-title{
+        margin-top: 50px;
+    }
+}
